@@ -50,7 +50,15 @@ PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python -m unittest discover -s tests -v
 
 Run these commands from this repository root. No dataset download, CSV, scientific workspace, or saved model is needed. Synthetic features and targets are generated from scratch in memory on every run. Training and inference run together; the command prints JSON and does not save data, predictions, or model files. Inference is implemented by `sacs_demo.evaluate.predict` for a model trained in the current process.
 
-Alternatively, install the package with `python -m pip install -e .` and run `sacs-demo --config configs/demo.yaml`.
+Alternatively, install the package with a recent pip:
+
+```bash
+python -m pip install --upgrade pip
+python -m pip install -e .
+sacs-demo --config configs/demo.yaml
+```
+
+Editable installation is recommended with a recent pip.
 
 ## What to inspect
 
