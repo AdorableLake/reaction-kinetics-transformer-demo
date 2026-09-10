@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sacs-transformer-portfolio"
+version = "0.1.0"
+description = "A synthetic-data Transformer demonstration; not the research architecture"
+requires-python = ">=3.9"
+dependencies = ["numpy==2.0.2", "torch==2.8.0", "PyYAML==6.0.2"]
+
+[project.scripts]
+sacs-demo = "sacs_demo.demo:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

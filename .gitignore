@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.DS_Store
+.env
+.env.*
+outputs/
+*.pt
+*.pth
+*.ckpt
+*.joblib
+*.pkl
